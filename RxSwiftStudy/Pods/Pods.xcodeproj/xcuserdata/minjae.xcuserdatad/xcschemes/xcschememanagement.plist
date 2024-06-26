@@ -4,21 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-RxSwiftTest-RxSwiftTestUITests.xcscheme</key>
+		<key>Pods-RxSwiftStudy-RxSwiftStudyUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Pods-RxSwiftTest.xcscheme</key>
+		<key>Pods-RxSwiftStudy.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Pods-RxSwiftTestTests.xcscheme</key>
+		<key>Pods-RxSwiftStudyTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

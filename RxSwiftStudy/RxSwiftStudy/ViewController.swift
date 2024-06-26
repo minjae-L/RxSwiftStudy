@@ -9,10 +9,6 @@ import UIKit
 import RxSwift
 import RxRelay
 
-private let bag = DisposeBag()
-private let subject = BehaviorRelay<[UIImage]>(value: [])
-public let observable = subject.asObservable()
-
 class ViewController: UIViewController {
     private let bag = DisposeBag()
     private var images = BehaviorRelay<[UIImage]>(value: [])
@@ -27,24 +23,34 @@ class ViewController: UIViewController {
         images
             .subscribe(onNext: { [weak imagePreview] photos in
                 guard let preview = imagePreview else { return }
-                
-//                preview.image = photos.collage(size: preview.frame.size)
+                preview.image = UIImage.collage(images: photos, size: preview.frame.size)
             })
             .disposed(by: bag)
         
         images.asObservable()
             .subscribe(onNext: { [weak self] photos in
-//                self?.updateUI(photos: photos)
+                self?.updateUI(photos: photos)
             })
             .disposed(by: bag)
     }
     
-    func actionAdd() {
-        guard let image = UIImage(systemName: "cloud") else { return }
-        images.accept(images.value + [image])
+    @IBAction func actionSave(_ sender: Any) {
+        guard let image = imagePreview.image else { return }
+        
+        PhotoWriter.save(image)
+            .asSingle()
+            .subscribe(
+                onSuccess: { [weak self] id in
+//                    self?.showMessage()
+                    self?.actionClear(self?.clearButton)
+                },
+                onFailure: { [weak self] error in
+//                    self?.showMessager()
+                }
+            )
+            .disposed(by: bag)
     }
-
-    func actionClear() {
+    @IBAction func actionClear(_ sender: Any) {
         images.accept([])
     }
     @IBAction func tappedAddItemsButton(_ sender: Any) {
@@ -60,13 +66,6 @@ class ViewController: UIViewController {
             })
             .disposed(by: bag)
         navigationController?.pushViewController(photosViewController, animated: true)
-    }
-    
-    func tappedAddItemsButton() {
-        let vc = PhotosViewController()
-//        guard let let photosViewController = storyboard?.instantiateViewController(withIdentifier: "PhotosViewController") as PhotosViewController else { return }
-        
-        navigationController?.pushViewController(vc, animated: true)
     }
     private func updateUI(photos: [UIImage]) {
         saveButton.isEnabled = photos.count > 0 && photos.count % 2 == 0

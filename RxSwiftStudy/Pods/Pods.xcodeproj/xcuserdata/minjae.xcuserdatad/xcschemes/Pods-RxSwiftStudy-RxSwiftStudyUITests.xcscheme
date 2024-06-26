@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D7D71E3E081EAFA578D9BDDA3785922"
-               BuildableName = "Pods_RxSwiftTest.framework"
-               BlueprintName = "Pods-RxSwiftTest"
+               BlueprintIdentifier = "02382A3C7BFE163DFB416851BA209869"
+               BuildableName = "Pods_RxSwiftStudy_RxSwiftStudyUITests.framework"
+               BlueprintName = "Pods-RxSwiftStudy-RxSwiftStudyUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

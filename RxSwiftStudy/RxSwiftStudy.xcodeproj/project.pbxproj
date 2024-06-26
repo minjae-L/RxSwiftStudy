@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		096ED34885427BD141E60D6F /* Pods_RxSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F52538D758D03D5650FF7EF /* Pods_RxSwiftTest.framework */; };
-		9A4743C5ACEB9BE9A00474DD /* Pods_RxSwiftTest_RxSwiftTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF9BEF4EFDB7C1C42698CC1 /* Pods_RxSwiftTest_RxSwiftTestUITests.framework */; };
-		9C1661421C277E94395310B7 /* Pods_RxSwiftTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E975B7EF3FA2E83C845874D /* Pods_RxSwiftTestTests.framework */; };
+		28A0A494160DC0338FB7D623 /* Pods_RxSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C455391C4F8120D5DA62E3E5 /* Pods_RxSwiftStudy.framework */; };
 		B53872632C2A36C8004B0A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53872622C2A36C8004B0A2E /* AppDelegate.swift */; };
 		B53872652C2A36C8004B0A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53872642C2A36C8004B0A2E /* SceneDelegate.swift */; };
 		B53872672C2A36C8004B0A2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53872662C2A36C8004B0A2E /* ViewController.swift */; };
@@ -20,7 +18,11 @@
 		B53872842C2A36CB004B0A2E /* RxSwiftTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53872832C2A36CB004B0A2E /* RxSwiftTestUITests.swift */; };
 		B53872862C2A36CB004B0A2E /* RxSwiftTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53872852C2A36CB004B0A2E /* RxSwiftTestUITestsLaunchTests.swift */; };
 		B55E683B2C2AE11100973096 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E683A2C2AE11100973096 /* PhotosViewController.swift */; };
+		B598CFA12C2BEEA00056BC9F /* UIImage+Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598CFA02C2BEEA00056BC9F /* UIImage+Collage.swift */; };
+		B598CFA32C2BFA730056BC9F /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598CFA22C2BFA730056BC9F /* PhotoWriter.swift */; };
 		B5AD5E722C2BB88B00D17B90 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AD5E712C2BB88B00D17B90 /* PhotoCell.swift */; };
+		C2C6355CA31BF2CEA76D1D35 /* Pods_RxSwiftStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2AF2A7A6561F4842863CC4 /* Pods_RxSwiftStudyTests.framework */; };
+		F02960B4765A6D82CF881938 /* Pods_RxSwiftStudy_RxSwiftStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FCD018A084E6C4BF812D6A /* Pods_RxSwiftStudy_RxSwiftStudyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06FCD018A084E6C4BF812D6A /* Pods_RxSwiftStudy_RxSwiftStudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudy_RxSwiftStudyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08112BF3128D2094EE96A2A6 /* Pods-RxSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		2A2AF2A7A6561F4842863CC4 /* Pods_RxSwiftStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CBBC2B296421BB12B88E3F /* Pods-RxSwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		3AB20500A6982F686C73ACE8 /* Pods-RxSwiftTest-RxSwiftTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest-RxSwiftTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftTest-RxSwiftTestUITests/Pods-RxSwiftTest-RxSwiftTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4E975B7EF3FA2E83C845874D /* Pods_RxSwiftTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F52538D758D03D5650FF7EF /* Pods_RxSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1208524E45390F6D4BA1FF /* Pods-RxSwiftStudy-RxSwiftStudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy-RxSwiftStudyUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudy-RxSwiftStudyUITests/Pods-RxSwiftStudy-RxSwiftStudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		592F5C0F919ECE50F371865B /* Pods-RxSwiftStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyTests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyTests/Pods-RxSwiftStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		704D8E612A1DE93EE2AACDFC /* Pods-RxSwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		7995D2AD4C1D4269B6627075 /* Pods-RxSwiftTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTestTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftTestTests/Pods-RxSwiftTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F71CC083EC407C5C18CB1B5 /* Pods-RxSwiftStudy-RxSwiftStudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy-RxSwiftStudyUITests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudy-RxSwiftStudyUITests/Pods-RxSwiftStudy-RxSwiftStudyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B538725F2C2A36C8004B0A2E /* RxSwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53872622C2A36C8004B0A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53872642C2A36C8004B0A2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +69,13 @@
 		B55E683A2C2AE11100973096 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		B560D83A2C2A8732008DF1D4 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B560D83E2C2A8770008DF1D4 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B598CFA02C2BEEA00056BC9F /* UIImage+Collage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Collage.swift"; sourceTree = "<group>"; };
+		B598CFA22C2BFA730056BC9F /* PhotoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWriter.swift; sourceTree = "<group>"; };
 		B5AD5E712C2BB88B00D17B90 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		C2C8D1AA9CAAECDA38F3BB3B /* Pods-RxSwiftStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyTests/Pods-RxSwiftStudyTests.release.xcconfig"; sourceTree = "<group>"; };
+		C455391C4F8120D5DA62E3E5 /* Pods_RxSwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51E6A02DB8E47C6674F9B91 /* Pods-RxSwiftTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftTestTests/Pods-RxSwiftTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDC99804CF0B5A3F0763196E /* Pods-RxSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
-		EFF9BEF4EFDB7C1C42698CC1 /* Pods_RxSwiftTest_RxSwiftTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTest_RxSwiftTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC18A221BF28F307186ECF6F /* Pods-RxSwiftTest-RxSwiftTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest-RxSwiftTestUITests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftTest-RxSwiftTestUITests/Pods-RxSwiftTest-RxSwiftTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				096ED34885427BD141E60D6F /* Pods_RxSwiftTest.framework in Frameworks */,
+				28A0A494160DC0338FB7D623 /* Pods_RxSwiftStudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1661421C277E94395310B7 /* Pods_RxSwiftTestTests.framework in Frameworks */,
+				C2C6355CA31BF2CEA76D1D35 /* Pods_RxSwiftStudyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4743C5ACEB9BE9A00474DD /* Pods_RxSwiftTest_RxSwiftTestUITests.framework in Frameworks */,
+				F02960B4765A6D82CF881938 /* Pods_RxSwiftStudy_RxSwiftStudyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +116,12 @@
 				FC18A221BF28F307186ECF6F /* Pods-RxSwiftTest-RxSwiftTestUITests.release.xcconfig */,
 				D51E6A02DB8E47C6674F9B91 /* Pods-RxSwiftTestTests.debug.xcconfig */,
 				7995D2AD4C1D4269B6627075 /* Pods-RxSwiftTestTests.release.xcconfig */,
+				37CBBC2B296421BB12B88E3F /* Pods-RxSwiftStudy.debug.xcconfig */,
+				704D8E612A1DE93EE2AACDFC /* Pods-RxSwiftStudy.release.xcconfig */,
+				3E1208524E45390F6D4BA1FF /* Pods-RxSwiftStudy-RxSwiftStudyUITests.debug.xcconfig */,
+				9F71CC083EC407C5C18CB1B5 /* Pods-RxSwiftStudy-RxSwiftStudyUITests.release.xcconfig */,
+				592F5C0F919ECE50F371865B /* Pods-RxSwiftStudyTests.debug.xcconfig */,
+				C2C8D1AA9CAAECDA38F3BB3B /* Pods-RxSwiftStudyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -144,6 +160,8 @@
 				B53872702C2A36CA004B0A2E /* Info.plist */,
 				B55E683A2C2AE11100973096 /* PhotosViewController.swift */,
 				B5AD5E712C2BB88B00D17B90 /* PhotoCell.swift */,
+				B598CFA02C2BEEA00056BC9F /* UIImage+Collage.swift */,
+				B598CFA22C2BFA730056BC9F /* PhotoWriter.swift */,
 			);
 			path = RxSwiftStudy;
 			sourceTree = "<group>";
@@ -170,9 +188,9 @@
 			children = (
 				B560D83E2C2A8770008DF1D4 /* RxSwift.framework */,
 				B560D83A2C2A8732008DF1D4 /* RxSwift.framework */,
-				4F52538D758D03D5650FF7EF /* Pods_RxSwiftTest.framework */,
-				EFF9BEF4EFDB7C1C42698CC1 /* Pods_RxSwiftTest_RxSwiftTestUITests.framework */,
-				4E975B7EF3FA2E83C845874D /* Pods_RxSwiftTestTests.framework */,
+				C455391C4F8120D5DA62E3E5 /* Pods_RxSwiftStudy.framework */,
+				06FCD018A084E6C4BF812D6A /* Pods_RxSwiftStudy_RxSwiftStudyUITests.framework */,
+				2A2AF2A7A6561F4842863CC4 /* Pods_RxSwiftStudyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,15 +333,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest-RxSwiftTestUITests/Pods-RxSwiftTest-RxSwiftTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftStudy-RxSwiftStudyUITests/Pods-RxSwiftStudy-RxSwiftStudyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest-RxSwiftTestUITests/Pods-RxSwiftTest-RxSwiftTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftStudy-RxSwiftStudyUITests/Pods-RxSwiftStudy-RxSwiftStudyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest-RxSwiftTestUITests/Pods-RxSwiftTest-RxSwiftTestUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftStudy-RxSwiftStudyUITests/Pods-RxSwiftStudy-RxSwiftStudyUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		528D2B7EABD9459DDE5D3BF3 /* [CP] Check Pods Manifest.lock */ = {
@@ -341,7 +359,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxSwiftTest-RxSwiftTestUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftStudy-RxSwiftStudyUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -363,7 +381,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxSwiftTest-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftStudy-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -376,15 +394,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF69E3FE1E29D8F7B47E3FD5 /* [CP] Check Pods Manifest.lock */ = {
@@ -402,7 +420,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxSwiftTestTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftStudyTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -416,7 +434,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B598CFA32C2BFA730056BC9F /* PhotoWriter.swift in Sources */,
 				B53872672C2A36C8004B0A2E /* ViewController.swift in Sources */,
+				B598CFA12C2BEEA00056BC9F /* UIImage+Collage.swift in Sources */,
 				B5AD5E722C2BB88B00D17B90 /* PhotoCell.swift in Sources */,
 				B55E683B2C2AE11100973096 /* PhotosViewController.swift in Sources */,
 				B53872632C2A36C8004B0A2E /* AppDelegate.swift in Sources */,
@@ -597,7 +617,7 @@
 		};
 		B538728A2C2A36CB004B0A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDC99804CF0B5A3F0763196E /* Pods-RxSwiftTest.debug.xcconfig */;
+			baseConfigurationReference = 37CBBC2B296421BB12B88E3F /* Pods-RxSwiftStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -605,7 +625,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M82N55553U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RxSwiftTest/Info.plist;
+				INFOPLIST_FILE = RxSwiftStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -626,7 +646,7 @@
 		};
 		B538728B2C2A36CB004B0A2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08112BF3128D2094EE96A2A6 /* Pods-RxSwiftTest.release.xcconfig */;
+			baseConfigurationReference = 704D8E612A1DE93EE2AACDFC /* Pods-RxSwiftStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -634,7 +654,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M82N55553U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RxSwiftTest/Info.plist;
+				INFOPLIST_FILE = RxSwiftStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -655,7 +675,7 @@
 		};
 		B538728D2C2A36CB004B0A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D51E6A02DB8E47C6674F9B91 /* Pods-RxSwiftTestTests.debug.xcconfig */;
+			baseConfigurationReference = 592F5C0F919ECE50F371865B /* Pods-RxSwiftStudyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -676,7 +696,7 @@
 		};
 		B538728E2C2A36CB004B0A2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7995D2AD4C1D4269B6627075 /* Pods-RxSwiftTestTests.release.xcconfig */;
+			baseConfigurationReference = C2C8D1AA9CAAECDA38F3BB3B /* Pods-RxSwiftStudyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -697,7 +717,7 @@
 		};
 		B53872902C2A36CB004B0A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AB20500A6982F686C73ACE8 /* Pods-RxSwiftTest-RxSwiftTestUITests.debug.xcconfig */;
+			baseConfigurationReference = 3E1208524E45390F6D4BA1FF /* Pods-RxSwiftStudy-RxSwiftStudyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -716,7 +736,7 @@
 		};
 		B53872912C2A36CB004B0A2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC18A221BF28F307186ECF6F /* Pods-RxSwiftTest-RxSwiftTestUITests.release.xcconfig */;
+			baseConfigurationReference = 9F71CC083EC407C5C18CB1B5 /* Pods-RxSwiftStudy-RxSwiftStudyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
