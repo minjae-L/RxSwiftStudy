@@ -27,8 +27,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Clear"/>
                                 <connections>
-                                    <action selector="actionClear" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLq-XR-DGh"/>
-                                    <action selector="actionClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6W-tW-JYQ"/>
+                                    <action selector="actionClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FbH-qZ-fSU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sv-XW-yma">

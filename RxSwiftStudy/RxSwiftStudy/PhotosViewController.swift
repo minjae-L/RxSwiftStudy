@@ -12,7 +12,7 @@ import Photos
 class PhotosViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    let bag = DisposeBag()
     private let selectedPhotosSubject = PublishSubject<UIImage>()
     
     private lazy var photos = PhotosViewController.loadPhotos()
@@ -31,13 +31,45 @@ class PhotosViewController: UIViewController {
     var selectedPhotos: Observable<UIImage> {
         return selectedPhotosSubject.asObservable()
     }
+    let authorized = PHPhotoLibrary.authorized
+        .share()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        authorized
+            .skip(1)
+            .takeLast(1)
+            .filter({ $0 == false})
+            .subscribe(onNext: { [weak self] _ in
+                guard let errorMessage = self?.errorMessage else { return }
+                
+                DispatchQueue.main.async(execute: errorMessage)
+            })
+            .disposed(by: bag)
+        authorized
+            .skip(while: { $0 == false})
+            .take(1)
+            .subscribe(onNext: { [weak self] _ in
+                self?.photos = PhotosViewController.loadPhotos()
+                DispatchQueue.main.async {
+                    self?.collectionView.reloadData()
+                }
+            })
+            .disposed(by: bag)
     }
     override func viewWillDisappear(_ animated: Bool) {
         selectedPhotosSubject.onCompleted()
     }
-    
+    private func errorMessage() {
+        alert(title: "No access to Camero Roll", text: "You can grant access to Combinestagram from the Settings app")
+            .asObservable()
+            .take(for: RxTimeInterval.seconds(5), scheduler: MainScheduler.instance)
+            .subscribe(onCompleted: { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
+                self?.navigationController?.popViewController(animated: true)
+            })
+            .disposed(by: bag)
+    }
 }
 
 extension PhotosViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -71,6 +103,7 @@ extension PhotosViewController: UICollectionViewDelegate, UICollectionViewDataSo
             guard let image = image, let info = info else { return }
             
             if let isThumbnail = info[PHImageResultIsDegradedKey as NSString] as? Bool, !isThumbnail {
+                print("PVC selectedPhotosSubject onNext")
                 self?.selectedPhotosSubject.onNext(image)
             }
         })
